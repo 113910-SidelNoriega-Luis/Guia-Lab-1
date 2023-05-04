@@ -23,7 +23,7 @@ public class Main {
         ej.Op();*/
         /*Ej_11 ej = new Ej_11();
         ej.Op();*/
-        Ej_12 ej = new Ej_12();
-        ej.Op();
+        /*Ej_12 ej = new Ej_12();
+        ej.Op();*/
     }
 }
