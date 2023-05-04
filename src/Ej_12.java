@@ -10,6 +10,36 @@ public class Ej_12 {
       • Cantidad total de autos.
       • Cantidad de autos con poco uso.
       • Promedio de antigüedad de los autos que no sean muy antiguos.*/
-
-
+    int ant;
+    int A;
+    int Q;
+    int W;
+    int E;
+    public void Op(){
+        Scanner s=new Scanner(System.in);
+        ant = s.nextInt();
+        while (ant!=0) {
+            if (ant>0 && ant<6) {
+                System.out.println("Nuevo");
+                W++;
+                E+=ant;
+            } else if (ant>5 && ant<11) {
+                System.out.println("Poco Uso");
+                Q++;
+                W++;
+                E+=ant;
+            }else if (ant>10 && ant<21) {
+                System.out.println("MUCHO USO");
+                W++;
+                E+=ant;
+            }else if (ant>20) {
+                System.out.println("Muy Antiguo");
+            }
+            A++;
+            ant = s.nextInt();
+        }
+        System.out.println(A);
+        System.out.println(Q);
+        System.out.println(E/W);
+    }
 }
